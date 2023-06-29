@@ -115,4 +115,26 @@ console.log("//////////////////////////////////////////////////////////////");
 ////////////////// 2.9 Recap1 /////////////////
 ////////////////// 2.10 Recap2 /////////////////
 
-// 데이터 타입 복습
+const calculator = {
+  plus: function (fir, sec) {
+    console.log(fir + sec);
+  },
+  minus: function (fir, sec) {
+    console.log(fir - sec);
+  },
+  multplication: function (fir, sec) {
+    console.log(fir * sec);
+  },
+  division: function (fir, sec) {
+    console.log(fir / sec);
+  },
+  square: function (fir, sec) {
+    console.log(fir ** sec);
+  },
+};
+
+calculator.plus(5, 10);
+calculator.minus(5, 10);
+calculator.multplication(5, 10);
+calculator.division(5, 10);
+calculator.square(5, 10);
