@@ -141,4 +141,54 @@ calculator.square(5, 10);
 
 ///////////////////////////////////////////////////////////
 console.log("//////////////////////////////////////////////////////////////");
-////////////////// 2.10 /////////////////
+////////////////// 2.11 returns, 2.12 recap /////////////////
+
+const age2 = 96;
+function calculateKrAge(ageOfForeigner) {
+  return ageOfForeigner + 2;
+}
+
+const KrAge = calculateKrAge(age2);
+
+console.log(KrAge);
+
+const calculator2 = {
+  plus: function (fir, sec) {
+    return fir + sec;
+  },
+  minus: function (fir, sec) {
+    return fir - sec;
+  },
+  times: function (fir, sec) {
+    return fir * sec;
+  },
+  divide: function (fir, sec) {
+    return fir / sec;
+  },
+  power: function (fir, sec) {
+    return fir ** sec;
+  },
+};
+
+const plusResult = calculator2.plus(2, 3); // 5
+const minusResult = calculator2.minus(plusResult, 10); // -5
+const timesResult = calculator2.times(10, minusResult); // -50
+const divideResult = calculator2.divide(timesResult, plusResult); // -10
+const powerResult = calculator2.power(divideResult, minusResult);
+
+console.log(plusResult);
+console.log(minusResult);
+console.log(timesResult);
+console.log(divideResult);
+console.log(powerResult);
+
+///////////////////////////////////////////////////////////
+console.log("//////////////////////////////////////////////////////////////");
+////////////////// 2.13 Conditionals /////////////////
+
+const age = prompt("How old are you?");
+
+console.log(age);
+
+console.log(typeof "15", typeof parseInt("15"));
+console.log(parseInt("adasd"));
